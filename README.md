@@ -1,0 +1,2 @@
+# foodmagizine
+learning javascript functions
