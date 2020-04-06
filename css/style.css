@@ -1,0 +1,184 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+
+main {
+    background-image: url(https://source.unsplash.com/1600x900/?restaurant);
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: dodgerblue;
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+    border-bottom: black 2px solid;
+    text-align: center;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 3em;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+h2 {
+    font-weight: bold;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.menu-text {
+    margin: 20px auto;
+    background-color: dodgerblue;
+    color: white;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.food-div {
+    border: black 1px solid;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: lightblue;
+    height: auto;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.food-div:hover {
+    border: black 2px solid;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+p {
+    font-size: 1.5vw;
+}
+
+img {
+    width: 60%;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+
+button {
+    background-color: black;
+    border: black 1px solid;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 1.1vw;
+    margin: 5px;
+    color: whitesmoke;
+    width: 25%;
+    height: auto;
+    margin: 10px auto;
+}
+
+button:hover {
+    background-color: darkgrey;
+    color: black;
+}
+
+#parent-foods {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: max-content;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    border: black 2px solid;
+    box-shadow: black 2px;
+    margin: 5px auto;
+}
+
+#recipe {
+    background-color: white;
+    width: 15%;
+    height: auto;
+    visibility: hidden;
+    margin: 0 auto;
+    border: black 1px solid;
+    text-align: center;
+    padding: 2%;
+}
+
+.favorite {
+    background-color: dodgerblue;
+    
+}
+
+@media screen and (max-width: 900px) {
+    #parent-foods {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    .food-div {
+        width: 70%;
+    }
+
+    button {
+        width: 60%;
+        font-size: 0.8em;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    #parent-foods {
+        grid-template-columns: 1fr;
+
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    #recipe {
+        width: 90%;
+        height: auto;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+    
+    p {
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 2em;
+    }
+  }
